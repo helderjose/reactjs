@@ -1,0 +1,29 @@
+mongoDb
+NodeJs
+
+git do curso
+https://github.com/cod3rcursos
+https://github.com/cod3rcursos/curso-react-redux
+https://github.com/cod3rcursos/curso-react-redux.git
+
+
+
+===== iniciar ambiente =====
+- inicie o mongo
+- pelo terminal acesse as seguintes pastas e execute os comandos abaixo
+/dados/helder/particular/programacao2/reactJs/curso-react-redux/my-money-app/backend
+npm install
+npm run dev
+npm run production //ou esse comando ou o npm run dev
+
+/dados/helder/particular/programacao2/reactJs/curso-react-redux/my-money-app/frontend
+npm install
+npm run dev
+http://localhost:8080
+
+
+
+
+===== versões dos softwares nesse curso =====
+node -v v6.10.0
+npm -v 3.10.10

@@ -1,0 +1,15 @@
+===== para executar o projeto =====
+- inicie o mongo:
+cd /opt/mongodb-linux-x86_64-rhel70-3.6.5/bin && ./mongod --dbpath /opt/mongo-data
+- inicie o robomongo:
+cd /opt/robo3t-1.2.1-linux-x86_64-3e50a65/bin && ./robo3t
+
+npm install
+npm run dev
+npm run production
+
+se não intalar o pm2 de forma global, faça o seguinte
+./node_modules/.bin/pm2 monit
+./node_modules/.bin/pm2 status
+
+http://localhost:3003/api/todos

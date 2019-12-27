@@ -1,0 +1,21 @@
+----- banco de dados ----
+- inicie o mongo:
+cd /opt/mongodb-linux-x86_64-rhel70-3.6.5/bin && ./mongod --dbpath /opt/mongo-data
+
+- inicie o robomongo:
+cd /opt/robo3t-1.2.1-linux-x86_64-3e50a65/bin && ./robo3t
+
+----- backend -----
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/my-money-app/backend && npm install
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/my-money-app/backend && npm run dev
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/my-money-app/backend && npm run production
+
+
+----- frontend -----
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/my-money-app/frontend && npm install
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/my-money-app/frontend && npm run dev
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/my-money-app/frontend && npm run production
+
+
+
+http://localhost:8080/

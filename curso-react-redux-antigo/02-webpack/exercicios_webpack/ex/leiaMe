@@ -1,0 +1,25 @@
+===== 05 - Usando o Sistema de Módulos do CommonsJS =====
+- ex.2/logger.js
+
+
+
+===== 04 - Testando a Configuração =====
+- package.json
+"dev": "webpack-dev-server --progress --colors --inline --hot"
+--progress  //mostra o progresso
+--colors    //coloca o progresso colorido
+--inline e --hot    // é o live reload (fica atualizando no navegador)
+
+- ex.1/index.js
+
+----- comandos para executar o exemplo -----
+nvm install v6.10.0
+npm install
+npm run dev
+
+
+
+===== 03 - Criando o index.html =====
+----- anotações do exemplo -----
+- public/index.html
+- ex/index.js

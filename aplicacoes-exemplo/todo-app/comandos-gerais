@@ -1,0 +1,30 @@
+----- iniciar ambiente -----
+
+- inicie o mongo:
+cd /opt/mongodb-linux-x86_64-rhel70-3.6.5/bin && ./mongod --dbpath /opt/mongo-data
+- inicie o robomongo:
+cd /opt/robo3t-1.2.1-linux-x86_64-3e50a65/bin && ./robo3t
+
+
+- backend
+npm install
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/todo-app/backend && npm run dev
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/todo-app/backend && npm run production
+npm run dev
+ou
+npm run production
+./node_modules/.bin/pm2 monit
+
+- frontend
+npm install
+npm run dev
+cd /dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/todo-app/frontend-redux-fazendo && npm run dev
+http://localhost:8080/
+
+
+----- instalação dependências -----
+npm install --save-dev redux@3.6.0
+npm install --save-dev react-redux@5.0.2
+npm install --save-dev 
+npm install --save-dev 
+npm install --save-dev 

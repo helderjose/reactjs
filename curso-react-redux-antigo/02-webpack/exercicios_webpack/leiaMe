@@ -1,0 +1,100 @@
+para testar os exemplos olhe o webpack.config.js, pesquise por "entry"
+
+----- comandos -----
+nvm install v6.10.0
+npm install
+npm run dev
+
+
+----- 11 - Adicionando o Loader para CSS -----
+- ex.10
+- webpack.config.js
+    const ExtractTextPlugin = require('extract-text-webpack-plugin')
+    plugin: new ExtractTextPlugin('app.css')
+    loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+- public/index.html
+    <link rel='stylesheet' href="app.css">
+- package.json
+    npm install --save-dev extract-text-webpack-plugin@1.0.1 style-loader@0.13.1 css-loader@0.26.1
+
+
+
+----- 10 - Adicionando o Preset do React -----
+npm install --save-dev react@15.4.2
+
+- ex.8
+- ex.9
+    - webpack.config.js
+        presets: ['es2015', 'react'],
+    - package.json
+        npm install --save-dev babel-preset-react@6.22.0
+
+
+
+----- 09 - Interpretando o Operador Spread (Plugin Babel) -----
+- ex.7
+- webpack.config.js
+    uso do plugin do babel plugins: ['transform-object-rest-spread'], para usar o operador spread "..."
+- package.json
+    npm install --save-dev babel-plugin-transform-object-rest-spread@6.22.0
+
+npm run dev
+
+
+
+----- 08 - Usando o Sistema de Módulos do ES2015 (Babel) -----
+- ex.6
+
+- package.json
+- webpack.config.js
+
+uso do "babel":
+- instalando babel
+    npm install --save-dev babel-core@6.22.1 babel-loader@6.2.10 babel-preset-es2015@6.22.0
+- pesquise por "loaders" no webpack.config
+    test: /.js?$/   //carrega todos os arquivos .js
+    loader: 'babel-loader'  //usa o babel para carregar os arquivos .js
+    exclude: /node_modules/     //diz para o babel ignorar o node_modules
+    query   //o que eu quero que o loader interprete
+
+
+
+----- 07 - Usando EcmaScript 2015 sem Babel -----
+- ex.5
+
+Apenas cria a classe Pessoa
+
+
+
+----- 06 - Importância da referência -----
+- ex.3
+- ex.4
+
+
+----- 05 - Usando o Sistema de Módulos do CommonsJS -----
+- ex.2
+
+
+
+----- 04 - Testando a Configuração -----
+apenas imprime no console do browser
+
+----- 02 - Configuração Inicial -----
+webpack.config.js
+configurações como port e etc
+--------------------------
+
+
+
+
+Os arquivos com o código estão em
+/dados/helder/particular/programacao2/reactJs/curso-react-redux/exercicios_webpack
+
+===== comandos para executar os exemplos =====
+
+
+
+
+===== comandos para criar projeto novo =====
+npm init -y     //cria o package.json
+npm i --save-dev webpack@1.14.0 webpack-dev-server@1.16.2

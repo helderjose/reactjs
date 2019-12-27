@@ -1,0 +1,131 @@
+===== 21 - Adicionar Teclas de Atalhos =====
++ todoForm.jsx
+    - "keyHandler"
+
+
+===== 20 - Melhorias de CSS e Limpar Formulário =====
++ todoForm.jsx
+    - botão de limpar o formulário de pesquisa;
+    - handleClear();
++ custom.css
+    - importando em app.jsx
+
+
+===== 19 - Pesquisa de TODOs =====
++ todoForm.jsx
+    - botão pesquisar todo;
+    - refresh();
+    - handleSearch();
+
+
+===== 18 - Marcar como Concluído_Pendente =====
++ todoList.jsx
+    - incluir botões de marcar concluído e excluir;
+    - ação e exibição dos botões "excluir, marcar concluído e etc";
+
+
+===== 17 - Consulta e Exclusão de TODOs =====
++ todo.jsx
+    - método "refresh": faz um axios.get
+    - método "handleRemove": axios.delete
++ todoList.jsx
+    - table com os todos
+    - chama "handleRemove"
+
+
+===== 16 - Evento Adicionar (Integração com Backend) =====
++ todo.jsx
+    - uso do "axios"; axios faz chamada de serviço do backend, get, post e etc
+    - método "handleAdd"
+
+
+===== 15 - Evento onChange =====
++ todoForm.jsx
+    - input "description", coloca "value", "onChange"
+
+
+===== 14 - Evento Adicionar =====
++ todoForm.jsx
+    - adicionou o evento onClick no botão
+    - fez bind do this no construtod do todo.jsx
+
+
+===== 13 - Renderização Condicional (If) =====
++ template/if.jsx
++ iconButton.jsx usa o if.jsx
+
+
+===== 12 - Componentes Grid e IconButton =====
++ template/grid
++ template/iconButton.jsx
+
+===== 11 - Estrutura do Formulário =====
+- só criou o input do todoForm
+
+
+===== 10 - Estratégia de Implementação =====
+- só um vídeo de explicação
+
+
+===== 09 - Componentes TodoForm e TodoList =====
++ todo/todoForm.jsx
++ todo/todoList.jsx
+
+
+===== 08 - Componente PageHeader =====
++ src/template/pageHeader.jsx
+
+
+===== 07 - Configurando as Rotas (React-Router) =====
++ src/main/routes.jsx
+
+
+===== 06 - Componente Menu =====
++ src/template/menu.jsx
+
+
+===== 05 - Componentes Todo e About =====
++ src/todo/todo.jsx
++ src/about/about.jsx
+
+===== 04 - Componente App =====
++ src/main/app.jsx
++ src/index.jsx
+
+
+
+===== 03 - Criação do index.html =====
++ public/index.html
+
+
+===== 02 - Configurando o Build com Webpack =====
++ webpack.config.js
+    - modules: __dirname + '/node_modules' // para usar modules/bootstrap/dist/.../css
++ package.json
+    - scripts
+
+
+===== 01 - criação do projeto =====
+npm init -y
+npm install --save-dev webpack@1.14.0
+npm install --save-dev webpack-dev-server@1.16.2
+
+npm install --save-dev babel-core@6.22.1
+npm install --save-dev babel-loader@6.2.10
+npm install --save-dev babel-plugin-react-html-attrs@2.0.0
+npm install --save-dev babel-plugin-transform-object-rest-spread@6.22.0
+npm install --save-dev babel-preset-es2015@6.22.0
+npm install --save-dev babel-preset-react@6.22.0
+
+npm install --save-dev css-loader@0.26.1
+npm install --save-dev extract-text-webpack-plugin@1.0.1
+npm install --save-dev file-loader@0.9.0
+npm install --save-dev style-loader@0.13.1
+
+npm install --save-dev bootstrap@3.3.7
+npm install --save-dev font-awesome@4.7.0
+
+npm install --save-dev react@15.4.2
+npm install --save-dev react-dom@15.4.2
+npm install --save-dev react-router@3.0.2
+npm install --save-dev axios@0.15.3

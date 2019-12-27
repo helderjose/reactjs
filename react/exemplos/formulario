@@ -1,0 +1,3 @@
+Tecla de atalho no formuláro:
+Dar submit no formulário ao apertar 'enter', limpar o fomuláro ao apertar 'esc' e etc,
+tem um exemplo na pasta template, componente 'todoForm'.

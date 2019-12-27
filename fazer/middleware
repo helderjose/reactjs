@@ -1,0 +1,21 @@
+middleware:
+7 - TodoApp (Migração para Redux)
+    00078 - Aplicando Middleware (Redux-Promise).mp4
+
+/*
+middleware promise => sempre que retorna uma promise no action ele
+espear a promise ser resolvida e só depois disparar os reducers.
+*/
+
+/*
+
+middleware multi => permite retornar um array com várias actions, só
+que essas actions são disparadas em paralelo
+*/
+
+
+npm install --save-dev redux-thunk@2.2.0
+
+npm install --save-dev redux-multi@0.1.12
+
+npm install --save-dev redux-promise@0.5.3

@@ -1,0 +1,19 @@
+----- 03 - Criando o index.html -----
+- apenas cria o arquivo public/index.html
+
+
+----- 02 - Configuração Inicial -----
+- configuração inicial webpack
+- 
+
+
+
+----- 01 - Visão Geral e Instalação -----
+
+os códigos desse curso estão em:
+github.com/cod3rcursos/curso-react-redux
+/dados/helder/particular/programacao2/reactJs/curso-react-redux
+
+webpack - ferramenta usada para build do código react
+
+https://webpack.js.org/

@@ -1,0 +1,73 @@
+===== Habilitando o CORS =====
++ config/cors.js
++ server.js
+    - pesquise por "cors"
+
+
+
+===== Testando a API com Postman =====
+http://localhost:3003/api/todos
+- marcar x-www-form-urlencoded
+- no campo de texto  (não no body) colocar
+description: pagar conta do cartão  //description é o atributo que do model
+
+
+https://github.com/baugarten/node-restful
+
+
+
+===== Cinfiguração de Rotas para os Serviços =====
++ config/routes.js
+
+
+===== ODM e Criação da API REST =====
++ todo.js
+    - definição dos objetos da aplicação ("schema")
++ todoService.js
+    - Olhar os comentários no código
+
+
+===== configuração banco de dados =====
++ database.js
+    - faz as configurações no arquivo.
++ loader.js
+    - fazer a referência ao arquivo database.jse
+
+
+===== configurando o servidor com express =====
++ src/loader.js
+    - configuração do express
+
++ src/config/server.js
+
+--- comandos executar projeto ---
+npm run dev
+
+
+===== package.json =====
+"main": "src/loader.js",    // arquivo que inicia a aplicação
+"dev": "nodemon",
+"production": "pm2 start src/loader.js --name todo-app"
+
+===== comandos =====
+npm init -y
+
+npm install --save-dev body-parser@1.15.2
+npm install --save-dev express@4.14.0
+npm install --save-dev mongoose@4.7.0
+npm install --save-dev node-restful@0.2.5
+npm install --save-dev pm2@2.1.5
+npm install --save-dev nodemon@1.11.0
+
+npm install
+
+
+--- body-parser ---
+faz parse do body da requisição
+
+--- pm2 ---
+launcher, é ele que "dispara" a aplicação a partir do comando node, controla uso de memória de processador,
+fica monitorando a aplicação. Caso a aplicação caia, ele restarta ela
+
+--- nodemon ---
+mesmo que o pm2 só que menos robusto

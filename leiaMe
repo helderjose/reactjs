@@ -1,0 +1,28 @@
+Projetos exemplo:
+-------------- Upload image --------------------
+https://codeburst.io/react-image-upload-with-kittens-cc96430eaece
+https://github.com/funador/react-image-upload
+--------------------------------------------------------------------------
+
+---- toastr -----
+sem redux
+https://github.com/Vashnak/react-toasts
+
+https://reactjs.org/docs/portals.html
+https://codepen.io/gaearon/pen/yzMaBd
+https://codeburst.io/reacts-portals-in-3-minutes-9b2efb74e9a9
+
+
+
+
+
+pesquisar por react-redux-toastr
+-----------------------
+
+
+gerar o arquivo bundle.js
+./node_modules/.bin/webpack
+
+
+Template Admin Lte
+"admin-lte": "2.3.6",

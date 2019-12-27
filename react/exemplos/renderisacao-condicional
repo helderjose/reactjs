@@ -1,0 +1,13 @@
+/dados/programacao2/reactJs/reactJs/aplicacoes-exemplo/todo-app/frontend-sem-redux/frontend-sem-redux/src/template/if.jsx
+
+if.jsx
+
+import React from 'react'
+
+export default props => {
+    if(props.test) {
+        return props.children
+    } else {
+        return false
+    }
+}

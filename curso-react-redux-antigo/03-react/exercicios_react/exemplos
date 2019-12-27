@@ -1,0 +1,85 @@
+========== ex.18, ex.19, ex.20 ==========
+é sobre redux, coloquei na pasta de redux.
+
+
+========== ex.17 ==========
++ componentes Controlados e não controlados
+    - quando alterar o valor do inpu altera o label. ("to way data binding do Angular")
+
+
+========== ex.16 ==========
++ component contador (component com estado)
+
+
+========== ex.15 ==========
++ Component baseado em classe
+
+
+========== ex.14 ==========
++ utils/reactUtils.js
+    - usando React.Children.map no utils para nao ficar repetindo o código
+
+
+========== ex.13 ==========
+React.Children.map, usado para passar a propriedade lastName do pai para o filho
+
+
+========== ex.12 ==========
+React.cloneElement com o operador spread "... props"
++ para usar o operador spread
+    npm install --save-dev babel-plugin-transform-object-rest-spread@6.22.0
++ webpack.config.js
+    plugins: ['transform-object-rest-spread']
+
+obs: Assim funciona para apenas um elemento
+
+
+========== ex.11 ==========
+cloneElement sem o operador spread "..." (evite usar dessa forma porque para o elemento diretamente)
+
+
+========== ex.10 ==========
+não tem vídeo
+
+
+========== ex.9 ==========
+Exibe os membros da família
++ member.jspx e silvaFamily.jspx
+
+
+========== ex.8 ==========
++ usa o export default no primeiro componente e muda o import no index.js
+obs: continuação do ex.7
+
+
+========== ex.7 ==========
+muda o jeito de usar o export no componet, do ex.6
+obs: continuação do ex.6
+
+
+========== ex.6 ==========
+vários componentes em um único arquivo (evitar fazer isso, use um arquivo por component)
+
+
+========== ex.5 ==========
+props, não tem vídeo.
+
+
+========== ex.4 ==========
++ Component arrow function
+    - só muda a function para arrow function.
+
+
+========== ex.3 ==========
++ webpack.config.js
+    - extensions: ['', '.js', '.jsx']
++ index.js
+    - importa o componente sem a extensão, por causa da configuração do webpack.config.js
+
+
+========== ex.2 ==========
+- cria um componente e exibe na tela.
+
+
+========== ex.1 ==========
+Hello World React, exibe um <h1> na tela

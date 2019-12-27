@@ -1,0 +1,18 @@
+Bind do this: forma de fazer bind do this
+/dados/cursosUdemy/Curso React.js Ninja - React Completo/3 - Modulo 01 - Parte 2/060 M1A48 - formas de fazer bind do this em eventos.mp4
+--------------------------------
+
+Middleware redux-mult
+Permite passar um array de actions para o dispatch
+
+
+dispatch recebe uma action, só consigo parra um array de action para o dispatch usando
+o middleware redux-mult
+------------------------------------------------------------------------------
+
+
+
+
+palavras reservadas
+class = className
+for = htmlFor

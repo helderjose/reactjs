@@ -1,0 +1,11 @@
+extensão para Chrome:
+Pesquise por "redux-devtools chrome" e instale a extensão.
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd
+
+Configure no projeto, e com f12 olhe a abra "Redux".
+
+Configurar no projeto:
+Olhar a pasta de aplicações de exemplo, o front-end com redux.
+
+index.jsx
+    const devTools

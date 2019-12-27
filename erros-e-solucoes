@@ -1,0 +1,7 @@
+Falta de memória para watch ao iniciar um projeto,
+execute o seguinte comando.
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+O comando escreve a linha
+fs.inotify.max_user_watches=524288
+no arquivo sysctl.conf
