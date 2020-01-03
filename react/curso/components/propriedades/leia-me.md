@@ -1,22 +1,15 @@
 # executar o projeto
 npm install
 npm run dev
+http://localhost:8080/
 
 
 # component.jsx
-    - props
-    - props.value
-    ```
-    export default (props) => (
-    <h1>{props.value}</h1>
-)
-    ```
+Cria e exporta componente um componente com propriedade (props)
+"value" e exibe-a.
 
 # index.jsx
-    - value
-    ```
-    <Component value="Minha propriedade!"/>
-    ```
+Usa o componente.jsx passando a propriedade (props) "value".
 
 # Teoria
 Todo componete do React recebe um parâmetro "props", que
