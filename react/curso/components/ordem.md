@@ -6,11 +6,10 @@
 
 
 1. componentes-filhos - um ou mais componentes dentro de outro
+1. props-children - passa um componente dentro de outro e exibe usando props.children
 
 
 
-1. componentes-filhos-2
-    - props.children
 1. componentes-filhos-3
     - passando propriedades para um único elemento filho.
 1. componentes-filhos-4
