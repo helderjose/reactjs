@@ -5,7 +5,10 @@
 
 
 
-1. componentes-filhos
+1. componentes-filhos - um ou mais componentes dentro de outro
+
+
+
 1. componentes-filhos-2
     - props.children
 1. componentes-filhos-3

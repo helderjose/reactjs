@@ -4,6 +4,8 @@ import SilvaFamily from './silvaFamily'
 
 
 ReactDOM.render(
-    <SilvaFamily/>
-
-, document.getElementById('app'))
+	<div style={{border: "solid 2px #000"}}>
+		<h3>index.jsx</h3>
+		<SilvaFamily />
+	</div>
+	, document.getElementById('app'))

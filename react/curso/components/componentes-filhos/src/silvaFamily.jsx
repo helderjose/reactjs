@@ -2,12 +2,13 @@ import React from 'react'
 import Member from './member'
 
 export default props => (
-    <div>
-        <Member name='João' lastName='Silva'/>
-        <Member name='Maria' lastName='Silva'/>
-        <Member name='José' lastName='Silva'/>
-        <Member name='Pedro' lastName='Silva'/>
-    </div>
+	<div style={{border: "solid 2px orange"}}>
+		<h3>silvaFamily.jsx</h3>
+		<Member name='João' lastName='Silva' />
+		<Member name='Maria' lastName='Silva' />
+		<Member name='José' lastName='Silva' />
+		<Member name='Pedro' lastName='Silva' />
+	</div>
 )
 
 
