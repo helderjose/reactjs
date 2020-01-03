@@ -1,12 +1,15 @@
 import React from 'react';
 
 const Primeiro = props => (
-    <h1>Primeiro Componente!</h1>
+	<div style={{border: "solid 1px #000"}}>
+		<h3>component.jsx -> primeiro</h3>
+		<h1>Primeiro Componente!</h1>
+	</div>
 )
 
 
 //mesma coisa do Primeiro só que como temos apenas uma instrução, podemos remover os parênteses.
-const Segundo = props => <h1>Segundo Componente!</h1>
+const Segundo = props => <div style={{border: "solid 1px #000"}}><h3>component.jsx -> segundo</h3> <h1>Segundo Componente!</h1> </div>
 
 // para poder usar o componente em outros arquivos.
 export { Primeiro, Segundo }

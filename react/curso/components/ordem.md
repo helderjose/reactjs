@@ -1,10 +1,10 @@
 1. component-function - componente baseado em função
 1. component-arrow-function - componente baseado em arrow function
 1. propriedades - passa uma propriedade para um componente exibir.
+1. exportar-varios-componentes - cria vários componentes em um único arquivo e exporta.
 
 
 
-1. exportar-varios-componentes
 1. componentes-filhos
 1. componentes-filhos-2
     - props.children

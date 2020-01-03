@@ -1,3 +1,13 @@
+# executar o projeto
+npm install
+npm run dev
+http://localhost:8080/
+
+# component.jsx
+Cria dois componentes e exporta.
+
+# index.jsx
+Importa e usa os componentes de component.jsx
 
 # Teoria
 Nesse exemplo é exportados vários componentes em um único arquivo.
@@ -9,6 +19,3 @@ e no componente que for usar importa o botão desejado.
 
 
 
-# executar o projeto
-npm install
-npm run dev

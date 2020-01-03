@@ -5,14 +5,15 @@ import { Primeiro, Segundo } from './component';
 
 
 ReactDOM.render(
-    <div>
-        <Primeiro/>
-        <Segundo/>
-    </div>
+	<div style={{border: "solid 2px #000"}}>
+		<h3>index.jsx</h3>
+		<Primeiro />
+		<Segundo />
+	</div>
 
-// devo colocar em um div ou em outro componente, senão dá erro.
-/* <Primeiro/>
-<Segundo/> */
+	// devo colocar em um div ou em outro componente, senão dá erro.
+	/* <Primeiro/>
+	<Segundo/> */
 
 
-, document.getElementById('app'))
+	, document.getElementById('app'))
