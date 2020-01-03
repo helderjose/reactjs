@@ -7,11 +7,10 @@
 
 1. componentes-filhos - um ou mais componentes dentro de outro
 1. props-children - passa um componente dentro de outro e exibe usando props.children
+1. react-clone-element - passando propriedades para um único elemento filho.
 
 
 
-1. componentes-filhos-3
-    - passando propriedades para um único elemento filho.
 1. componentes-filhos-4
     - passando propriedades para vários elementos filho.
 1. componentes-filhos-5
