@@ -1,6 +1,6 @@
-# executar o projeto
 npm install
 npm run dev
+http://localhost:8080/
 
 
 # Componente com estado não controlado.
@@ -13,8 +13,9 @@ a view, e nunca da view para o controller
 
 + index.jsx
 
-+ field.js
-    
+# field.js
+
+
 
 
 

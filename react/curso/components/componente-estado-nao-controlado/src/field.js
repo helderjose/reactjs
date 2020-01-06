@@ -1,40 +1,40 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 class Field extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { value: props.initialValue };
 
-    constructor(props) {
-        super(props)
-        this.state = { value: props.initialValue }
-
-        /*
+    /*
         Garante que o this vai apontar para o Field, porque em Javascript
-        o this muda dependendo de quem faz a chamada.
+        o this muda de escopo dependendo de quem faz a chamada.
         Isso foi feito para usar o this no onChange
         */
-        this.handleChange = this.handleChange.bind(this)
-    }
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-    handleChange(event) {
-        // quando altera o estado, o render() é chamado
-        this.setState({ value: event.target.value })
-    }
+  handleChange(event) {
+    // quando altera o estado, o render() é chamado
+    this.setState({ value: event.target.value });
+  }
 
-    render() {
-        return (
-            <div>
-                <label>{this.state.value}</label><br/>
+  render() {
+    return (
+      <div style={{border: "solid 1px #000"}}>
+        <label>{this.state.value}</label>
+        <br />
 
-                {/* aqui passamos a função (sem os parênteses) e não invocando a função, por
+        {/* aqui passamos a função (sem os parênteses) e não invocando a função, por
                 isso não precisa passar com arrow function.
                 O onChange chama uma função e por padrão ele passa o event que é justamente o que
                 esperamos na função hangleChange */}
-                <input onChange={this.handleChange} value={this.state.value}/>
-            </div>
-        )
-    }
+        <input onChange={this.handleChange} value={this.state.value} />
+      </div>
+    );
+  }
 }
 
-export default Field
+export default Field;
 
 /*
 Força o estado controlado do componente.
