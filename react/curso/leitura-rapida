@@ -1,0 +1,9 @@
+component
+	component arrow function
+	props
+	child-component
+	prop-child
+	React.cloneElement
+	React.Children.map
+	componente baseado em classe
+	state - this.state, this.setState

@@ -3,5 +3,8 @@ import ReactDOM from 'react-dom'
 import ClassComponent from './classComponent'
 
 ReactDOM.render(
-<ClassComponent label="Contador" initialValue={10}/>
-, document.getElementById('app'))
+  <div style={{border: "solid 2px orange"}}>
+    <h3>index.jsx</h3>
+    <ClassComponent label="Contador" initialValue={10} />
+  </div>
+  , document.getElementById('app'))

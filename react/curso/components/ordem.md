@@ -8,14 +8,12 @@
 1. componentes-filhos - um ou mais componentes dentro de outro
 1. props-children - passa um componente dentro de outro e exibe usando props.children
 1. react-clone-element - passando propriedades para um único elemento filho.
+1. react-children-map - passando propriedades para vários elementos filho.
+1. react-children-map-util - igual o exemplo "react-children-map", só que usando um utils.
+1. componente-classe - indicado para componente mais complexo
+1. componente-estado - this.state, this.setState
 
 
 
-1. componentes-filhos-4
-    - passando propriedades para vários elementos filho.
-1. componentes-filhos-5
-    - igual o exemplo anterior, só que usando um utils.
-1. componente-classe
-1. componente-estado
 1. componente-estado-nao-controlado
 
