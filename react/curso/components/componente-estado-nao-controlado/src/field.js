@@ -6,10 +6,10 @@ class Field extends Component {
     this.state = { value: props.initialValue };
 
     /*
-        Garante que o this vai apontar para o Field, porque em Javascript
-        o this muda de escopo dependendo de quem faz a chamada.
-        Isso foi feito para usar o this no onChange
-        */
+      Garante que o this vai apontar para o Field, porque em Javascript
+      o this muda de escopo dependendo de quem faz a chamada.
+      Isso foi feito para usar o this no onChange
+    */
     this.handleChange = this.handleChange.bind(this);
   }
 
@@ -20,14 +20,17 @@ class Field extends Component {
 
   render() {
     return (
-      <div style={{border: "solid 1px #000"}}>
+      <div style={{ border: "solid 1px orange" }}>
+        <h3>field.js</h3>
         <label>{this.state.value}</label>
         <br />
 
-        {/* aqui passamos a função (sem os parênteses) e não invocando a função, por
-                isso não precisa passar com arrow function.
-                O onChange chama uma função e por padrão ele passa o event que é justamente o que
-                esperamos na função hangleChange */}
+        {/*
+          aqui passamos a função (sem os parênteses) e não invocando a função, por
+          isso não precisa passar com arrow function.
+          O onChange chama uma função e por padrão ele passa o event que é justamente o que
+          esperamos na função hangleChange
+        */}
         <input onChange={this.handleChange} value={this.state.value} />
       </div>
     );
