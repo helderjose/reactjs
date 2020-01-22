@@ -1,3 +1,6 @@
+# Geral
+nodejs 12
+
 # backend
 yarn install
 yarn dev
