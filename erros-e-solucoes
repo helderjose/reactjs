@@ -5,3 +5,69 @@ echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo s
 O comando escreve a linha
 fs.inotify.max_user_watches=524288
 no arquivo sysctl.conf
+
+
+
+
+=======================================
+============= Erro =============
+=======================================
+Error: ENOSPC: System limit for number of file watchers reached, watch '/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/public/favicon.ico'
+    at FSWatcher.start (internal/fs/watchers.js:165:26)
+    at Object.watch (fs.js:1258:11)
+    at createFsWatchInstance (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/lib/nodefs-handler.js:38:15)
+    at setFsWatchListener (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/lib/nodefs-handler.js:81:15)
+    at FSWatcher.NodeFsHandler._watchWithNodeFs (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/lib/nodefs-handler.js:233:14)
+    at FSWatcher.NodeFsHandler._handleFile (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/lib/nodefs-handler.js:262:21)
+    at FSWatcher.<anonymous> (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/lib/nodefs-handler.js:495:21)
+    at FSReqWrap.oncomplete (fs.js:154:5)
+Emitted 'error' event at:
+    at FSWatcher._handleError (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/index.js:260:10)
+    at createFsWatchInstance (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/lib/nodefs-handler.js:40:5)
+    at setFsWatchListener (/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/chokidar/lib/nodefs-handler.js:81:15)
+    [... lines matching original stack trace ...]
+    at FSReqWrap.oncomplete (fs.js:154:5)
+
+
+=======================================
+============= log completo =============
+=======================================
+
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/accurate/.nvm/versions/node/v10.16.0/bin/node',
+1 verbose cli   '/home/accurate/.nvm/versions/node/v10.16.0/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'serve' ]
+2 info using npm@6.9.0
+3 info using node@v10.16.0
+4 verbose run-script [ 'preserve', 'serve', 'postserve' ]
+5 info lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~preserve: @minha-net-pages/mcr-boilerplate@1.0.0
+6 info lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~serve: @minha-net-pages/mcr-boilerplate@1.0.0
+7 verbose lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~serve: unsafe-perm in lifecycle true
+8 verbose lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~serve: PATH: /home/accurate/.nvm/versions/node/v10.16.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new/node_modules/.bin:/opt/exercism-linux-64bit/exercism:/home/accurate/.nvm/versions/node/v10.16.0/bin:/opt/apache-maven-3.5.0-bin/apache-maven-3.5.0/bin:/opt/jdk-8u181-linux-x64/jdk1.8.0_181/bin:/data/helder/scripts:/usr/share/Modules/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/home/accurate/bin
+9 verbose lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~serve: CWD: /data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new
+10 silly lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~serve: Args: [ '-c', 'vue-cli-service serve' ]
+11 silly lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~serve: Returned: code: 1  signal: null
+12 info lifecycle @minha-net-pages/mcr-boilerplate@1.0.0~serve: Failed to exec serve script
+13 verbose stack Error: @minha-net-pages/mcr-boilerplate@1.0.0 serve: `vue-cli-service serve`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/home/accurate/.nvm/versions/node/v10.16.0/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:301:16)
+13 verbose stack     at EventEmitter.emit (events.js:198:13)
+13 verbose stack     at ChildProcess.<anonymous> (/home/accurate/.nvm/versions/node/v10.16.0/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:198:13)
+13 verbose stack     at maybeClose (internal/child_process.js:982:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)
+14 verbose pkgid @minha-net-pages/mcr-boilerplate@1.0.0
+15 verbose cwd /data/projetos/git-terceiros/gitdev.net.com.br/ecare-net-front/tecnica/diagnostic-new/diagnostic-new
+16 verbose Linux 5.4.8-200.fc31.x86_64
+17 verbose argv "/home/accurate/.nvm/versions/node/v10.16.0/bin/node" "/home/accurate/.nvm/versions/node/v10.16.0/bin/npm" "run" "serve"
+18 verbose node v10.16.0
+19 verbose npm  v6.9.0
+20 error code ELIFECYCLE
+21 error errno 1
+22 error @minha-net-pages/mcr-boilerplate@1.0.0 serve: `vue-cli-service serve`
+22 error Exit status 1
+23 error Failed at the @minha-net-pages/mcr-boilerplate@1.0.0 serve script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
+
